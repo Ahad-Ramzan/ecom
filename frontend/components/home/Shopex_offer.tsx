@@ -29,7 +29,7 @@ const ShopexOffer = () => {
   ];
 
   return (
-    <section className="py-16 ">
+    <section className="py-16">
       {/* Heading */}
       <h1 className="text-4xl font-bold text-center text-_lighttext mb-12">
         What Shopex Offer!
@@ -40,7 +40,7 @@ const ShopexOffer = () => {
         {offers.map((offer, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow"
+            className="flex flex-col items-center bg-white shadow-lg rounded-lg p-6 hover:shadow-lg transition-shadow "
           >
             {/* Image */}
             <Image
