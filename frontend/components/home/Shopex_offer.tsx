@@ -29,7 +29,7 @@ const ShopexOffer = () => {
   ];
 
   return (
-    <section className="py-16 bg-[#F9F9F9]">
+    <section className="py-16 ">
       {/* Heading */}
       <h1 className="text-4xl font-bold text-center text-_lighttext mb-12">
         What Shopex Offer!

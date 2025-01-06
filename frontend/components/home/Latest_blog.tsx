@@ -5,18 +5,18 @@ import frame3 from "@/public/images/latest_blog/Frame_3.png";
 import calender from "@/public/icons/calendar.png";
 import pen from "@/public/icons/pen.png";
 import { lato } from "@/public/fonts/fonts";
+import { StaticImageData } from "next/image";
 
 // Define the type for the card data
 type Card = {
+  id: number;
   name: string;
-  image: HTMLImageElement;
-  pen_icon: HTMLImageElement;
-  cal_icon: HTMLImageElement;
-
+  image: StaticImageData;
+  pen_icon: StaticImageData;
+  cal_icon: StaticImageData;
   date: string;
   title: string;
   text: string;
-  id: number;
 };
 
 const Latest_blog = () => {
@@ -55,7 +55,7 @@ const Latest_blog = () => {
 
   return (
     <div className="space-y-8">
-      <h1 className="text-[42px] font-bold text-center text-_lighttext my-6 leading-10">
+      <h1 className="text-[42px] font-bold text-center text-_lighttext my-10 leading-10">
         Latest Blog
       </h1>
 

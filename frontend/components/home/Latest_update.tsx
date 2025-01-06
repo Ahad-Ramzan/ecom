@@ -5,7 +5,7 @@ import Button from "../Button";
 const LatestUpdate: React.FC = () => {
   return (
     <div
-      className="w-full h-[462px] bg-no-repeat bg-cover my-4"
+      className="w-full h-[462px] bg-no-repeat bg-cover my-8 mb-16"
       style={{ backgroundImage: `url(${BG.src})` }}
     >
       <div className="flex items-center justify-center h-full text-center">

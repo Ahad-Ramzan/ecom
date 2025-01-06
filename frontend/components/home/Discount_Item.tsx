@@ -4,15 +4,8 @@ import tick from "@/public/icons/Tick.png";
 import Image from "next/image";
 import Soft_chair from "@/public/images/sofa_bg_2.png";
 
-// Define types for discount items
-type DiscountItemProps = {
-  title: string;
-  description: string;
-  items: string[];
-  details: string[];
-};
-
-const DiscountItem: React.FC<DiscountItemProps> = () => {
+const DiscountItem: React.FC = () => {
+  // Define types for the discount items and details
   const discountItems: string[] = [
     "Wood Chair",
     "Plastic Chair",
