@@ -7,7 +7,7 @@ const Logo_bar = () => {
       <Image
         src={logo_bar}
         alt="Logo Bar"
-        className="my-10 max-w-[900px] h-24"
+        className="my-10 py-2 px-20 max-w-[900px] h-24 "
       />
     </div>
   );

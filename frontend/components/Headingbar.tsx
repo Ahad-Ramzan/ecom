@@ -5,7 +5,7 @@ import React, { useState } from "react";
 // Icon imports
 import dropdownIcon from "@/public/icons/dropdown.png";
 import userIcon from "@/public/icons/carbon_user.png";
-import cartIcon from "@/public/icons/fluent_cart.png";
+import cartIcon from "@/public/icons/cart.png";
 import heartIcon from "@/public/icons/heart.png";
 import mailIcon from "@/public/icons/mail_box.png";
 import phoneIcon from "@/public/icons/phone_call.png";
@@ -45,7 +45,7 @@ const Headingbar = () => {
               alt="Phone Icon"
               width={16}
               height={16}
-              className="mr-2"
+              className="mr-2 "
             />
             <span className="font-semibold">(12345) 67890</span>
           </div>

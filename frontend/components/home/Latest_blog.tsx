@@ -63,7 +63,7 @@ const Latest_blog = () => {
         {Cards.map((card) => (
           <div
             key={card.id}
-            className="w-[370px] bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden"
+            className="group w-[370px] bg-white border-gray-200 rounded-lg shadow-sm overflow-hidden"
           >
             <Image
               src={card.image}
@@ -90,7 +90,7 @@ const Latest_blog = () => {
                     {card.name}
                   </p>
                 </div>
-                <h3 className="text-[18px] font-bold leading-5 text-_lighttext my-5 hover:text-_pink">
+                <h3 className="text-[18px] font-bold leading-5 text-_lighttext my-5 group-hover:text-_pink">
                   {card.title}
                 </h3>
 
@@ -100,7 +100,7 @@ const Latest_blog = () => {
                   {card.text}
                 </p>
                 <button
-                  className={`${lato.className} text-[16px] leading-8 text-_lighttext hover:text-_pink transition-colors underline cursor-pointer mt-5`}
+                  className={`${lato.className} text-[16px] leading-8 text-_lighttext group-hover:text-_pink transition-colors underline cursor-pointer mt-5`}
                 >
                   Read More
                 </button>

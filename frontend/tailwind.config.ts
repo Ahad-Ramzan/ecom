@@ -15,9 +15,11 @@ export default {
         _darkblue: "#0D0E43",
         _darktext: "#1A0B5B",
         _lighttext: "#151875",
+        _lighttext2: "#111C85",
         _pink: "#FB2E86",
         _shade: "#EEEFFB",
         _subtext: "#8A8FB9",
+        _saleTage: "#3F509E",
       },
       container: {
         center: true, // Optionally center the container
