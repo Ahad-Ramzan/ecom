@@ -99,7 +99,7 @@ const Headingbar = () => {
               />
             </button>
             {isCurrencyDropdownOpen && (
-              <div className="absolute right-0 mt-2 w-32 bg-white text-black rounded shadow-lg">
+              <div className="absolute z-100 right-0 mt-2 w-32 bg-white text-black rounded shadow-lg">
                 <ul>
                   {currencies.map((currency) => (
                     <li

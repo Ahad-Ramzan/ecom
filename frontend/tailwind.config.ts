@@ -31,6 +31,6 @@ export default {
   },
   plugins: [],
 } satisfies Config;
-
+// shadow-[0_0_20px_5px_#F6F4FD]
 // MAIN: className="text-[42px] font-bold text-center text-_lighttext my-6 leading-10"
 // SUB MAIN: className="text-xl font-semibold text-_lighttext mb-2"

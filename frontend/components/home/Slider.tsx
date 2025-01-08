@@ -19,8 +19,8 @@ const Slider = () => {
         {/* Right side */}
         <div className="w-[400px] h-[400px]">
           <div className="w-[300px] h-[300px] bg-#ECD2FA rounded-full  ">
-            <div className="w-[200px] h-[200px] bg-green-300 relative left-0 top-0 z-30  "></div>
-            <div className="w-[200px] h-[200px] bg-yellow-300 left-0 top-0 z-40"></div>
+            <div className="w-[200px] h-[200px] bg-green-300 relative left-0 top-0   "></div>
+            <div className="w-[200px] h-[200px] bg-yellow-300 left-0 top-0"></div>
           </div>
         </div>
       </div>
