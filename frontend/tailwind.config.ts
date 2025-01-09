@@ -19,7 +19,9 @@ export default {
         _pink: "#FB2E86",
         _shade: "#EEEFFB",
         _subtext: "#8A8FB9",
+        _subtext2: "#C1C8E1",
         _saleTage: "#3F509E",
+        _green: "#19D16F",
       },
       container: {
         center: true, // Optionally center the container
