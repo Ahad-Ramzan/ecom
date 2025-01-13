@@ -4,7 +4,7 @@ import Cashback from "@/public/images/shopex_offer/cashback.png";
 import Freedelivery from "@/public/images/shopex_offer/free-delivery.png";
 import Premium from "@/public/images/shopex_offer/premium-quality.png";
 
-const ShopexOffer = () => {
+const OurFeatures = () => {
   const offers = [
     {
       title: "24/7 Support",
@@ -31,8 +31,8 @@ const ShopexOffer = () => {
   return (
     <section className="py-16">
       {/* Heading */}
-      <h1 className="text-4xl font-bold text-center text-_lighttext mb-12">
-        What Shopex Offer!
+      <h1 className="text-[42px] leading-6 font-bold text-center text-black mb-12">
+        Our Features
       </h1>
 
       {/* Cards Section */}
@@ -40,7 +40,7 @@ const ShopexOffer = () => {
         {offers.map((offer, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white shadow-[0_0_20px_5px_#F6F4FD] rounded-lg p-6 hover:shadow-lg transition-shadow "
+            className="flex flex-col items-center  p-6  transition-shadow shadow-[0_0_20px_5px_#F6F4FD] hover:border-b-4 hover:border-[#FF9100]"
           >
             {/* Image */}
             <Image
@@ -65,4 +65,4 @@ const ShopexOffer = () => {
   );
 };
 
-export default ShopexOffer;
+export default OurFeatures;

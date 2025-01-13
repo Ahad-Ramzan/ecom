@@ -11,7 +11,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        _violet: "#7E33E0", // Add violet color
+        _violet: "#7E33E0",
         _darkblue: "#0D0E43",
         _darktext: "#1A0B5B",
         _lighttext: "#151875",
@@ -24,15 +24,23 @@ export default {
         _green: "#19D16F",
       },
       container: {
-        center: true, // Optionally center the container
+        center: true, // Centers the container horizontally
+        padding: {
+          DEFAULT: "0rem", // Adds default padding (16px)
+          sm: "2rem", // Small screen padding (32px)
+          md: "4rem", // Medium screen padding (64px)
+          lg: "5rem", // Large screen padding (80px)
+          xl: "6rem", // Extra-large screen padding (96px)
+        },
       },
-      margin: {
-        container: "370px", // Add a custom margin utility
+      screens: {
+        sm: "640px", // Small devices (phones)
+        md: "768px", // Medium devices (tablets)
+        lg: "1024px", // Large devices (desktops)
+        xl: "1280px", // Extra-large devices
+        "2xl": "1536px", // 2x Extra-large devices
       },
     },
   },
   plugins: [],
 } satisfies Config;
-// shadow-[0_0_20px_5px_#F6F4FD]
-// MAIN: className="text-[42px] font-bold text-center text-_lighttext my-6 leading-10"
-// SUB MAIN: className="text-xl font-semibold text-_lighttext mb-2"

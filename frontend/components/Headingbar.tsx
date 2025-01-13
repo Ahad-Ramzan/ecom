@@ -9,6 +9,7 @@ import cartIcon from "@/public/icons/cart.png";
 import heartIcon from "@/public/icons/heart.png";
 import mailIcon from "@/public/icons/mail_box.png";
 import phoneIcon from "@/public/icons/phone_call.png";
+import Link from "next/link";
 
 const Headingbar = () => {
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
@@ -26,7 +27,7 @@ const Headingbar = () => {
 
   return (
     <div className="bg-_violet">
-      <div className="container text-white h-11 flex justify-between items-center">
+      <div className="container md:px-5 text-white h-14 md:h-11  flex flex-col gap-2 md:flex-row justify-between items-center">
         {/* Left Section */}
         <div className="flex items-center gap-4">
           <div className="flex items-center">
@@ -117,7 +118,9 @@ const Headingbar = () => {
 
           {/* Login */}
           <div className="flex items-center cursor-pointer">
-            <span className="font-semibold mr-2">Login</span>
+            <Link href={"/Login"} className="font-semibold mr-2">
+              Login
+            </Link>
             <Image src={userIcon} alt="User Icon" width={16} height={16} />
           </div>
 
@@ -129,13 +132,15 @@ const Headingbar = () => {
 
           {/* Cart */}
           <div className="cursor-pointer">
-            <Image
-              src={cartIcon}
-              alt="Cart Icon"
-              width={24}
-              height={24}
-              className=""
-            />
+            <Link href={"/ShopingCurt"}>
+              <Image
+                src={cartIcon}
+                alt="Cart Icon"
+                width={24}
+                height={24}
+                className=""
+              />
+            </Link>
           </div>
         </div>
       </div>

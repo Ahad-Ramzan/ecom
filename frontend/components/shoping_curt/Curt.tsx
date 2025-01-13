@@ -62,7 +62,7 @@ const Curt = () => {
   ];
 
   return (
-    <div className="flex container gap-10 my-20">
+    <div className="flex flex-col lg:flex-row container gap-10 my-20">
       <div className="">
         <table className="w-full border-collapse">
           <thead>
@@ -127,7 +127,7 @@ const Curt = () => {
           <Button>Clear Curt</Button>
         </div>
       </div>
-      <div className="flex flex-col gap-5 mt-5">
+      <div className="flex flex-col md:flex-row lg:flex-col gap-5 mt-5">
         <CartTotals />
         <CalculateShopping />
       </div>

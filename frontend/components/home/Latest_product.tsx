@@ -61,13 +61,13 @@ const LatestProduct: React.FC = () => {
   ];
 
   return (
-    <div className="py-10 container">
+    <div className="py-10 lg:container sm:mx-5">
       {/* Header Section */}
-      <h1 className="text-[42px] font-bold text-center text-_lighttext my-6 leading-10">
+      <h1 className="lg:text-[42px] md:text-[32px] text-[24px] font-bold text-center text-_lighttext my-6 leading-10">
         Latest Product
       </h1>
       <div className="flex justify-center mb-16 mt-10">
-        <ul className="flex gap-11 text-[18px] font-semibold leading-5 text-_lighttext">
+        <ul className="flex gap-5 md:gap-11 text-[12px] md:text-[18px] font-semibold leading-5 text-_lighttext">
           {navItems.map((item) => (
             <li
               key={item}

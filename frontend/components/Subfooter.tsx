@@ -7,14 +7,14 @@ import twitterIcon from "@/public/icons/twitter.png";
 const Subfooter = () => {
   return (
     <div className="bg-[#E7E4F8] w-full h-14 flex items-center">
-      <div className="container mx-auto flex justify-around items-center px-4">
+      <div className="container mx-auto flex flex-col sm:flex-row justify-around items-center px-4">
         {/* Copyright Text */}
         <p className="text-_subtext text-sm leading-5">
           © 2025 Your Company. All Rights Reserved.
         </p>
 
         {/* Social Media Icons */}
-        <div className="flex gap-4">
+        <div className="flex gap-4 my-2 sm:my-0">
           <Image
             src={facebookIcon}
             alt="Facebook"

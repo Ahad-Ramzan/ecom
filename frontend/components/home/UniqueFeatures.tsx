@@ -20,25 +20,29 @@ const UniqueFeatures: React.FC = () => {
   ];
 
   return (
-    <div className="w-full h-[579px] bg-_shade my-6">
-      <div className="container w-[1050px] mx-auto h-full flex items-center justify-center">
+    <div className="w-full bg-_shade my-6">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col md:flex-row items-center justify-center">
         {/* Left Side: Image */}
-        <div className="w-[550px] h-[550px] ml-[-9px]">
-          <Image src={sofaBg} alt="Sofa Background" />
+        <div className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[550px] mx-auto mb-6 md:mb-0 md:mr-10">
+          <Image
+            src={sofaBg}
+            alt="Sofa Background"
+            className="object-contain"
+          />
         </div>
 
         {/* Right Side: Content */}
-        <div className="flex flex-col justify-center ml-10">
-          <h3 className="text-[35px] font-semibold text-_lighttext mb-6 leading-[46px] tracking-[1.5%]">
+        <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left ">
+          <h3 className="text-[24px] sm:text-[28px] md:text-[35px] font-semibold text-_lighttext mb-6 leading-[32px] sm:leading-[36px] md:leading-[46px] tracking-[1.5%]">
             Unique Features Of Latest & Trending Products
           </h3>
 
           {/* Features List */}
-          <ul className="mb-6 space-y-4">
+          <ul className="mb-6 space-y-4 w-full sm:w-auto text-left">
             {features.map((feature, index) => (
               <li
                 key={index}
-                className={`flex items-center gap-2 text-_subtext text-[16px] leading-6 font-medium font ${lato.className} `}
+                className={`flex items-center gap-2 text-_subtext text-[14px] sm:text-[16px] leading-6 font-medium ${lato.className}`}
               >
                 <span
                   className={`w-3 h-3 rounded-full ${feature.dotColor}`}
@@ -49,13 +53,13 @@ const UniqueFeatures: React.FC = () => {
           </ul>
 
           {/* Call to Action */}
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-4">
             <Button color="bg-_pink">Add to Cart</Button>
-            <div>
-              <h4 className="text-[14px] leading-[16.41px]  font-normal text-_darktext ">
+            <div className="text-center sm:text-left">
+              <h4 className="text-[14px] sm:text-[16px] leading-[16.41px] font-normal text-_darktext">
                 B&B Italian Sofa
               </h4>
-              <p className="text-[14px] leading-[16.41px]  font-normal text-_darktext ">
+              <p className="text-[14px] sm:text-[16px] leading-[16.41px] font-normal text-_darktext">
                 $32.00
               </p>
             </div>
