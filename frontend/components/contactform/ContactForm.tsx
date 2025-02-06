@@ -7,7 +7,7 @@ import Button from "../Button";
 const ContactForm = () => {
   return (
     <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 my-28">
-      {/* Left Section: Information About us */}
+      {/* Left Section */}
       <div>
         <h2 className="text-[36px]  leading-[48px] font-bold text-_lighttext mb-4">
           Information About us
@@ -18,7 +18,7 @@ const ContactForm = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque
           ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique
           amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis
-          quis bibendum quam.
+          quis bibendum.
         </p>
         <div className="flex space-x-3">
           <div className="w-6 h-6 rounded-full bg-[#5625DF]" />
