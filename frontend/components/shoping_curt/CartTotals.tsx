@@ -1,8 +1,12 @@
 import Button from "../Button";
 import { lato } from "@/public/fonts/fonts";
-const CartTotals = () => {
-  const subtotal = 219.0; // Example subtotal
-  const total = 325.0; // Example total
+type TotalsProps = {
+  subtotal: number;
+};
+const CartTotals = ({ subtotal }: TotalsProps) => {
+  //add 10% tax
+  const total = subtotal > 0 ? subtotal * 1.1 : 0; // Example subtotal
+  // const total = ${total}; // Example total
 
   return (
     <div

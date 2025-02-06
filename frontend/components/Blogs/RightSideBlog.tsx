@@ -75,7 +75,7 @@ const RightSideBlog = () => {
     },
   ];
   return (
-    <div className="my-[60px] min-w-[300px] max-w-[400px]">
+    <div className="my-[60px] min-w-[300px] max-w-[400px] max-sm:flex max-sm:flex-col max-sm:items-center">
       {/* Search */}
       <div>
         <h3 className="text-[24px] leading-7 font-semibold text-_lighttext my-6">
@@ -85,7 +85,7 @@ const RightSideBlog = () => {
           <input
             type="text"
             placeholder="Search For Posts"
-            className="w-full text-[14px] outline-none mr-5 bg-transparent text-_lighttext2 placeholder:text-_subtext  "
+            className="w-full text-[14px] outline-none mr-5 bg-transparent text-_lighttext2 placeholder:text-_subtext "
           />
           <Image src={Search} alt="seach icon" width={20} height={20}></Image>
         </div>

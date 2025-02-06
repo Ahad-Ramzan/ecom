@@ -59,11 +59,11 @@ const Latest_blog = () => {
         Latest Blog
       </h1>
 
-      <div className="container flex gap-8 flex-wrap justify-center">
+      <div className="container flex lg:flex-col-3 gap-8 flex-wrap justify-center">
         {Cards.map((card) => (
           <div
             key={card.id}
-            className="group w-[370px] bg-white border-gray-200 rounded-lg shadow-sm overflow-hidden"
+            className="group w-[320px] bg-white border-gray-200 rounded-lg shadow-sm overflow-hidden"
           >
             <Image
               src={card.image}

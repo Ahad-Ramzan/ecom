@@ -55,31 +55,27 @@ const LeftSideBlog = () => {
   ];
 
   return (
-    <div className="my-20">
-      <div className="container mx-auto flex flex-col gap-8 max-w-[870px] ">
+    <div className="my-20 w-full">
+      <div className="container mx-auto flex flex-col gap-8 max-w-[870px]">
         {Cards.map((card) => (
           <div
             key={card.id}
-            className="group flex flex-col bg-white  rounded-lg "
+            className="group flex flex-col bg-white rounded-lg"
           >
             <Image
               src={card.image}
               alt={card.title}
-              className="w-full max-h-[450px]  object-fill"
+              className="w-full max-h-[450px] object-cover"
             />
             <div className="p-6">
-              <div className="flex items-center gap-4 mb-3">
-                <p className="  flex items-center gap-2">
-                  <Image
-                    src={card.pen_icon}
-                    alt="author"
-                    className="w-4 h-4 "
-                  />
+              <div className="flex flex-wrap items-center gap-4 mb-3">
+                <p className="flex items-center gap-2">
+                  <Image src={card.pen_icon} alt="author" className="w-4 h-4" />
                   <div className="bg-[#FFE7F9] text-[14px] font-semibold leading-4 text-_lighttext py-1 px-8">
                     {card.name}
                   </div>
                 </p>
-                <p className=" flex items-center gap-2">
+                <p className="flex items-center gap-2">
                   <Image
                     src={card.cal_icon}
                     alt="calendar"
@@ -90,16 +86,16 @@ const LeftSideBlog = () => {
                   </div>
                 </p>
               </div>
-              <h3 className="text-[30px] font-bold text-_lighttext mb-3">
+              <h3 className="text-[24px] md:text-[30px] font-bold text-_lighttext mb-3">
                 {card.title}
               </h3>
               <p
-                className={`${lato.className} text-[16px] leading-6 text-_subtext mb-4`}
+                className={`${lato.className} text-[14px] md:text-[16px] leading-6 text-_subtext mb-4`}
               >
                 {card.text}
               </p>
               <button
-                className={`${lato.className} text-[18px] text-_lighttext font-semibold leading-5 flex items-center gap-2`}
+                className={`${lato.className} text-[16px] md:text-[18px] text-_lighttext font-semibold leading-5 flex items-center gap-2`}
               >
                 Read More <div className="bg-_pink w-2 h-2 rounded-full" />
               </button>

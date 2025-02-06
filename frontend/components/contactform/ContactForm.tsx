@@ -7,9 +7,9 @@ import Button from "../Button";
 const ContactForm = () => {
   return (
     <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 my-28">
-      {/* Left Section */}
+      {/* Left Section: Information About us */}
       <div>
-        <h2 className="text-[36px] leading-[48px] font-bold text-_lighttext mb-4">
+        <h2 className="text-[36px]  leading-[48px] font-bold text-_lighttext mb-4">
           Information About us
         </h2>
         <p

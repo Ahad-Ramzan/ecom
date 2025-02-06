@@ -29,11 +29,11 @@ const Slider = () => {
         </div>
 
         {/* Right side */}
-        <div className="relative w-[400px] h-[400px] flex flex-col justify-center">
+        <div className="relative w-[400px] h-[400px] items-center justify-center flex">
           <Image
             src={Ellipse}
             alt="Ellipse"
-            className=""
+            className="absolute -left-0 top-48"
             height={650}
             width={650}
           />
@@ -49,14 +49,14 @@ const Slider = () => {
             alt="Shell chair"
             height={630}
             width={630}
-            className="absolute -left-10 top-52"
+            className="absolute -left-10 top-52 z-50"
           />
           <Image
             src={discount}
             alt="discount"
-            height={120}
-            width={120}
-            className="absolute -right-10 top-48"
+            height={100}
+            width={100}
+            className="absolute -right-8 top-48"
           />
         </div>
       </div>

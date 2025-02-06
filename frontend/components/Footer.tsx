@@ -1,6 +1,7 @@
 import React from "react";
 import { lato } from "@/public/fonts/fonts";
 import Button from "./Button";
+import Link from "next/link";
 
 const Footer = () => {
   const navItems = [
@@ -53,7 +54,9 @@ const Footer = () => {
               placeholder="Enter Email Address"
               className="flex-grow px-4 py-2 focus:outline-none text-sm md:text-base"
             />
-            <Button>Sign Up</Button>
+            <Link href="/Signup">
+              <Button>Sign Up</Button>
+            </Link>
           </div>
 
           {/* Contact Information */}
